@@ -2,6 +2,8 @@
 using namespace std;
 #define ll long long int
 #define inf 1e18
+#define int long long
+
 ll t[4000005];
 void build(ll a[], ll v, ll tl, ll tr)
 {
@@ -50,7 +52,9 @@ ll get(ll v, ll tl, ll tr, ll pos)
             return get(2 * v + 1, tm + 1, tr, pos - t[2 * v]);
     }
 }
-int main()
+
+// Begin
+signed main()
 {
     ll i, n;
     cin >> n;
