@@ -36,6 +36,7 @@ void build(ll a[], ll v, ll tl, ll tr)
     }
 }
 
+// Update the value at the needed leaf
 void update(ll v, ll tl, ll tr, ll pos, ll val)
 {
     if (tl == tr)
