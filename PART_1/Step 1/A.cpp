@@ -3,6 +3,8 @@ using namespace std;
 #define ll long long int
 #define inf 1e18
 ll t[400005];
+
+// Making segment tree
 void build(ll a[], ll v, ll tl, ll tr)
 {
     if (tl == tr)
@@ -25,6 +27,7 @@ ll sum(ll v, ll tl, ll tr, ll l, ll r)
     ll tm = (tl + tr) / 2;
     return (sum(2 * v, tl, tm, l, min(r, tm)) + sum(2 * v + 1, tm + 1, tr, max(l, tm + 1), r));
 }
+
 
 void update(ll v, ll tl, ll tr, ll pos, ll val)
 {
