@@ -60,14 +60,15 @@ int main()
     {
         ll x, y, z;
         cin >> x >> y >> z;
-        if (x == 1)
+        if (x != 1)
         {
-            update(1, 0, n - 1, y, z);
+            
+            z--;
+            cout << sum(1, 0, n - 1, y, z) << "\n";
         }
         else
         {
-            z--;
-            cout << sum(1, 0, n - 1, y, z) << "\n";
+            update(1, 0, n - 1, y, z);
         }
     }
 
